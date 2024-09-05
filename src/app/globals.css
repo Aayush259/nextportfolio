@@ -17,6 +17,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  width: "100vw";
+  overflow-x: hidden;
 }
 
 @layer utilities {
