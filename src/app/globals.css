@@ -26,3 +26,15 @@ body {
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply w-0 overflow-visible bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-lg hover:bg-slate-900 transition-all duration-200;
+}
