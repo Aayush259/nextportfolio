@@ -9,7 +9,7 @@ export function HeroSection() {
             <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
                 Aayush Kumar Kumawat
             </p>
-            <p className="relative text-base md:text-lg mt-4 text-white font-normal text-center flex">
+            <p className="relative text-base md:text-lg mt-6 text-white font-normal text-center flex">
                 {
                     myHeadlines.map(headline => (
                         <span
