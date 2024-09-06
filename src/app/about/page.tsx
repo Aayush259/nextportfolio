@@ -1,6 +1,6 @@
 import { About } from "@/components/About";
 
-export default function Home() {
+export default function AboutPage() {
 
     return <About />;
 };
