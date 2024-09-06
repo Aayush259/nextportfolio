@@ -18,7 +18,7 @@ export function ContactForm() {
     const email = watch("email");
 
     // Fetch query to know whether the email is already taken or not.
-    const { data: isEmailAlreadyTaken, isError } = useQuery({
+    const { data: isEmailAlreadyTaken } = useQuery({
         queryKey: ["isEmailAlreadyTaken", { email }],
         queryFn: () => databaseService.checkEmail(email),
         staleTime: Infinity,
