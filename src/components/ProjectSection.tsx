@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/utlis/utlis";
 import { myProjects } from "@/app/globalConstants";
+import Link from "next/link";
 
 export const Card = React.memo(
   ({
@@ -51,9 +52,12 @@ export const Card = React.memo(
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+        <Link
+          href={card.link}
+          target="_blank"
+          className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
           {card.description}
-        </div>
+        </Link>
       </div>
     </div>
   )
