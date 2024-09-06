@@ -7,6 +7,7 @@ import { Input, TextArea } from "./ui/Input";
 import { cn } from "@/utlis/utlis";
 import databaseService from "@/app/services/databaseService";
 import Loader from "./Loader";
+import Success from "./Success";
 
 export function ContactForm() {
 
@@ -45,6 +46,9 @@ export function ContactForm() {
     const sendMessage = async (data: any) => {
         await sendMessageToDatabase(data);
     };
+
+    // If form submitted successfully, then show success message.
+    if (isSubmitSuccessful) return <Success />;
 
     return (
         <>
