@@ -61,6 +61,7 @@ const FloatingDockMobile = ({
                   },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                onClick={() => setOpen(false)}
               >
                 <Link
                   href={item.href}

@@ -33,13 +33,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <div className="fixed md:w-full left-10 bottom-32 md:bottom-10 z-50">
+        <div className="fixed md:w-full left-10 md:left-0 bottom-32 md:bottom-10 z-50">
           <NavBar />
         </div>
         <Link
           href={"https://github.com/Aayush259"}
           target="_blank"
-          className="fixed right-20 bottom-10 z-50">
+          className="fixed right-10 md:right-20 bottom-10 z-50">
           <AnimatedTooltip items={[myInfo]} />
         </Link>
       </body>
