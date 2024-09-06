@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { NavBar } from "@/components/NavBar";
+import { AnimatedTooltip } from "@/components/ui/AnimatedTooltip";
+import Link from "next/link";
+import { myInfo } from "./globalConstants";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +33,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <div className="fixed w-full left-0 bottom-10 z-50">
+          <NavBar />
+        </div>
+        <Link
+          href={"https://github.com/Aayush259"}
+          target="_blank"
+          className="fixed right-20 bottom-10 z-50">
+          <AnimatedTooltip items={[myInfo]} />
+        </Link>
       </body>
     </html>
   );
