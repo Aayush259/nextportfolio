@@ -58,7 +58,7 @@ export function ProjectSection() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto my-10 md:px-8 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto my-10 pb-10 md:px-8 w-full">
       {myProjects.map((project, index) => (
         <Card
           key={project.title}
