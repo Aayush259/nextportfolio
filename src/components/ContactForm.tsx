@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Label } from "@radix-ui/react-label";
@@ -43,7 +43,7 @@ export function ContactForm() {
     }, [isEmailAlreadyTaken]);
 
     // Function to send message to database.
-    const sendMessage = async (data: any) => {
+    const sendMessage = async (data: { name: string, email: string, userMessage: string }) => {
         await sendMessageToDatabase(data);
     };
 

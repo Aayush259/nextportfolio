@@ -11,7 +11,12 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: any;
+    card: {
+      title: string,
+      image: string;
+      description: string;
+      link: string;
+    };
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -53,6 +58,8 @@ export const Card = React.memo(
     </div>
   )
 );
+
+Card.displayName = "Card";
 
 export function ProjectSection() {
   const [hovered, setHovered] = useState<number | null>(null);

@@ -13,7 +13,7 @@ export function About() {
                     Get to know me
                 </h1>
                 <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-                    Hi, I'm Aayush Kumar Kumawat, a tech enthusiast 🚀 and a passionate coder dedicated for developing innovative and user-friendly applications. With a solid foundation in JavaScript and React, I strive to create responsive and visual appealing web experiences. My GitHub tells more about it, so don't forget to check it out!
+                    Hi, I&apos;m Aayush Kumar Kumawat, a tech enthusiast 🚀 and a passionate coder dedicated for developing innovative and user-friendly applications. With a solid foundation in JavaScript and React, I strive to create responsive and visual appealing web experiences. My GitHub tells more about it, so don&apos;t forget to check it out!
                 </p>
             </div>
         </div>
