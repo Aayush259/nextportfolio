@@ -14,7 +14,7 @@ export function NavBar() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-neutral-300" />
       ),
       href: "/",
     },
@@ -22,35 +22,35 @@ export function NavBar() {
     {
       title: "Projects",
       icon: (
-        <IconBrandCupra className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandCupra className="h-full w-full text-neutral-300" />
       ),
       href: "/projects",
     },
     {
       title: "About",
       icon: (
-        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-full w-full text-neutral-300" />
       ),
       href: "/about",
     },
     {
       title: "Contact",
       icon: (
-        <IconPhoneCall className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhoneCall className="h-full w-full text-neutral-300" />
       ),
       href: "/contact",
     },
     {
       title: "X",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-300" />
       ),
       href: "https://x.com/Aayush259_",
     },
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-300" />
       ),
       href: "https://github.com/Aayush259",
     },

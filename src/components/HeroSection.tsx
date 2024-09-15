@@ -5,7 +5,7 @@ import { myHeadlines } from "@/app/globalConstants";
 export function HeroSection() {
     return (
         <WavyBackground className="max-w-4xl mx-auto pb-40">
-            <p className="text-lg md:text-2xl lg:text-4xl text-center font-bold">Hi, I&apos;m</p>
+            <p className="text-lg md:text-2xl lg:text-4xl text-center font-bold !text-white">Hi, I&apos;m</p>
             <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
                 Aayush Kumar Kumawat
             </p>
